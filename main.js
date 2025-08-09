@@ -8,7 +8,7 @@ document.getElementById("checkButton").addEventListener("click", function () {
 
     // Check if either input is empty
     if (!expectedsha || !isosha) {
-        resultDiv.textContent = "⚠️ Both checksum fields must be filled out.";
+        resultDiv.textContent = "⚠️ Both checksum fields must be filled out";
         resultDiv.style.color = "orange";
         return;
     }
@@ -21,7 +21,7 @@ document.getElementById("checkButton").addEventListener("click", function () {
     } 
     
     else {
-        resultDiv.textContent = "❌ Checksums Do Not Match.";
+        resultDiv.textContent = "❌ Checksums Do Not Match";
         resultDiv.style.color = "red";
     }
 });
