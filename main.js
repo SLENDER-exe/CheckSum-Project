@@ -3,18 +3,18 @@ document.getElementById("checkButton").addEventListener("click", function () {
     const input2 = document.getElementById("inputText2");
     const resultDiv = document.getElementById("result");
 
-    const expectedsha = input1.value.trim().toUpperCase();
-    const isosha = input2.value.trim().toUpperCase();
+    const expected_sha = input1.value.trim().toUpperCase();
+    const iso_sha = input2.value.trim().toUpperCase();
 
     // Check if either input is empty
-    if (!expectedsha || !isosha) {
+    if (!expected_sha || !iso_sha) {
         resultDiv.textContent = "⚠️ Both checksum fields must be filled out";
         resultDiv.style.color = "orange";
         return;
     }
 
     // Compare the checksums
-    if (expectedsha === isosha) {
+    if (expected_sha === iso_sha) {
         resultDiv.textContent = "✅ Checksums Match!";
         resultDiv.style.color = "green";
 
