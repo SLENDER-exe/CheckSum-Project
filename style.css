@@ -87,12 +87,12 @@ body {
 
 @media (min-width: 100px) {
   .result {
-    font-size: 15px;
+    font-size: 30px;
   }
 }
 
 @media (min-width: 600px) {
   .result {
-    font-size: 25px;
+    font-size: 60px;
   }
 }
