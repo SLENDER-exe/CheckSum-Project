@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checksum Project</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <div class="title">
-  <h1>Checksum Checker</h1>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checksum Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Checksum Verify</h1>
+    </div>
 
-  <div class="container">
+    <div class="container">
+      <p class="description">
+        Enter the checksum and the expected checksum to verify
+      </p>
 
-  <p class="description">Enter the checksum and the expected checksum to verify</p>
+      <input
+        required
+        class="textbox1"
+        type="text"
+        id="inputText1"
+        placeholder="Enter the checksum"
+      />
+      <input
+        required
+        class="textbox2"
+        type="text"
+        id="inputText2"
+        placeholder="Enter the expected checksum"
+      />
+      <button class="button" id="checkButton">Verify</button>
 
-  <input required class="textbox1" type="text" id="inputText1" placeholder="Enter the checksum">
-  <input required class="textbox2" type="text" id="inputText2" placeholder="Enter the expected checksum">
-  <button class="button" id="checkButton">Verify</button>
-  
-  <div class="result" id="result"></div>
-</div>
+      <div class="result" id="result"></div>
+    </div>
 
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
